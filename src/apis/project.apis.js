@@ -147,3 +147,39 @@ export function get_pcaSubItem_sizeNumber(accessToken, size, number) {
         },
     })
 }
+
+export function get_pcaSupportDoc(accessToken) {
+    return axiosInstance.get(`/project/pca-supportdoc`, {
+        headers: {
+            ...tenantIdHeader,
+            Authorization: `Bearer ${accessToken}`,
+        },
+    })
+}
+
+export function get_pcaSupportDoc_get(accessToken, tenantId, attachmentId) {
+    return axiosInstance.get(`/project/pca-supportdoc/get/${tenantId}/${attachmentId}`, {
+        headers: {
+            ...tenantIdHeader,
+            Authorization: `Bearer ${accessToken}`,
+        },
+    })
+}
+
+export function get_pcaSupportDoc_id(accessToken, id) {
+    return axiosInstance.get(`/project/pca-supportdoc/${id}`, {
+        headers: {
+            ...tenantIdHeader,
+            Authorization: `Bearer ${accessToken}`,
+        },
+    })
+}
+
+export function get_pcaSupportDoc_sizeNumber(accessToken, size, number) {
+    return axiosInstance.get(`/project/pca-supportdoc/${size}/${number}`, {
+        headers: {
+            ...tenantIdHeader,
+            Authorization: `Bearer ${accessToken}`,
+        },
+    })
+}

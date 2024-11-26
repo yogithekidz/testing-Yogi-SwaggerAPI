@@ -126,29 +126,18 @@ export const project_pcaitem_schema = {
             type: 'object',
             properties: {
                 ...project_pcasubitem_schema.properties
-            // projectCostingId:                               { type: 'number' },
-            // itemNumber:                                     { type: 'number' },
-            // subItemName:                                    { type: 'string' },
-            // urut:                                           { type: 'number' },
-            // grade:                                          { type: 'string' },
-            // unit:                                           { type: 'string' },
-            // unitDisplay:                                    { type: 'string' },
-            // quantity:                                       { type: 'number' },
-            // period:                                         { type: 'number' },
-            // periodActual:                                   { type: 'number' },
-            // unitSellPrice:                                  { type: 'number' },
-            // sellPrice:                                      { type: 'number' },
-            // sellPriceActual:                                { type: 'number' },
-            // unitCost:                                       { type: 'number' },
-            // cost:                                           { type: 'number' },
-            // costActual:                                     { type: 'number' },
-            // unitGrossProfit:                                { type: 'number' },
-            // grossProfit:                                    { type: 'number' },
-            // grossProfitActual:                              { type: 'number' },
-            // grossProfitPercentage:                          { type: 'number' },
-            // grossProfitPercentageActual:                    { type: 'number' }
             }
          }
         }
+    }
+}
+
+export const project_pcaSupportDoc_schema = {
+    type: 'object',
+    properties: {
+        projectCostingId:                                   { type: 'number' },
+        attachmentId:                                       { type: 'number' },
+        fileName:                                           { type: 'string' },
+        description:                                        { type: 'string' }
     }
 }
