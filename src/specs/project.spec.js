@@ -144,7 +144,7 @@ describe('TESTING SWAGGER API -- /project', function() {
             expect(response.status).to.equal(200)
         })
     })
-    describe.only('/pca-supportdoc/ - Get Response /pca-supportdoc', function() {
+    describe('/pca-supportdoc/ - Get Response /pca-supportdoc', function() {
         it('Check valid response status code /pca-supportdoc', async function() {
             this.timeout(5000)
             const authResponse = await get_auth()
